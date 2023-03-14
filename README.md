@@ -1,9 +1,5 @@
 # Nvidia Jetson Minimizing at eMMC 16GB
 
-<aside>
-👥 Zerontech 김우영 선임 연구원
-
-</aside>
 
 # 1. **Nvidia install JetPack**
 
