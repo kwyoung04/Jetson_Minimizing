@@ -10,13 +10,13 @@ sudo apt-get -y install network-manager
 ### Installing the JetPack Lightweight Version
 ## /usr/local 
 sudo rm -rf $USB_DIR/local
-sudo cp /usr/local $USB_DIR/local
+sudo cp -r /usr/local $USB_DIR/local
 sudo mv /usr/local /usr/local.origin
 sudo ln -s $USB_DIR/local /usr/ 
 
 ## /var/cache/apt/ 
 sudo rm -rf $USB_DIR/var/cache/apt/
-sudo cp /var/cache/apt/ $USB_DIR/var/cache/apt/
+sudo cp -r /var/cache/apt/ $USB_DIR/var/cache/apt/
 sudo mv /var/cache/apt/ /var/cache/apt.origin
 sudo ln -s $USB_DIR/var/cache/apt/ /var/cache/
 
