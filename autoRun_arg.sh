@@ -37,7 +37,7 @@ if [ "$3" == "1" ]
   then
     echo "/var/cache/apt/"
     sudo rm -rf $USB_DIR/var/cache/apt/
-    mkdir -p $USB_DIR/var/cache/
+    sudo mkdir -p $USB_DIR/var/cache/
     sudo cp -r /var/cache/apt/ $USB_DIR/var/cache/apt/
     sudo mv /var/cache/apt/ /var/cache/apt.origin
     sudo ln -s $USB_DIR/var/cache/apt/ /var/cache/
