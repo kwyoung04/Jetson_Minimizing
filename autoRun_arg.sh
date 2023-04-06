@@ -36,11 +36,10 @@ fi
 if [ "$3" == "1" ]
   then
     echo "/var/cache/apt/"
-    sudo rm -rf $USB_DIR/var/cache/apt/
-    sudo mkdir -p $USB_DIR/var/cache/
-    sudo cp -r /var/cache/apt/ $USB_DIR/var/cache/apt/
+    sudo rm -rf $USB_DIR/apt/
+    sudo cp -r /var/cache/apt/ $USB_DIR/apt/
     sudo mv /var/cache/apt/ /var/cache/apt.origin
-    sudo ln -s $USB_DIR/var/cache/apt/ /var/cache/
+    sudo ln -s $USB_DIR/apt/ /var/cache/
 fi
 
 if [ "$4" == "1" ]
@@ -49,7 +48,7 @@ if [ "$4" == "1" ]
     sudo rm -rf $USB_DIR/src
     sudo cp -r /usr/src $USB_DIR/src
     sudo mv /usr/src /usr/src.origin
-    sudo ln -s $USB_DIR/src /src/ 
+    sudo ln -s $USB_DIR/src /usr/ 
 fi
 
 if [ "$5" == "1" ]
