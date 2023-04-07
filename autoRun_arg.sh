@@ -1,4 +1,4 @@
-#export USB_DIR=<arg>
+export USB_DIR=/mnt/usb
 
 
 
