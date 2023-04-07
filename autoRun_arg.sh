@@ -54,8 +54,8 @@ fi
 if [ "$5" == "1" ]
   then
     echo "cuda 포함된 jetpack 설치"
-    sudo apt install nvidia-jetpack
-    sudo apt clean
+    sudo apt -y install nvidia-jetpack
+    sudo apt -y clean
     sh -c "echo \"export PATH="/usr/local/cuda-11.4/bin:$PATH"\" >> ~/.bashrc"
     sh -c "echo \"export LD_LIBRARY_PATH="/usr/local/cuda-11.4/lib64:$LD_LIBRARY_PATH"\" >> ~/.bashrc"
 fi 
